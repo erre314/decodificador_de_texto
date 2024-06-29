@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" href="icons/chaves.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <h1 class="titulos">Criptografia</h1>
+        </header>
+
+        <div class="container-entrada">
+            <div class="entrada">
+                <textarea id="entrada-texto" placeholder="Digite seu texto"></textarea>
+                <p class="aviso">Aviso: apenas letras minúsculas e sem acento!</p>
+            </div>
+
+            <div id="saida">
+                <h2>Nenhuma mensagem encontrada</h2>
+                <p>Digite o texto que deseja criptografar ou descriptografar</p>
+            </div>
+        </div>
+
+        <div class="botoes">
+            <div class="container-botao">
+                <button onclick="criptografar()" class="botoes__criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="botoes__descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por <a class="links" href="https://github.com/erre314">Pierre</a></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

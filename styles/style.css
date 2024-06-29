@@ -1,0 +1,160 @@
+@import "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor-backgound: #D5D7F2;
+    --cor-letras: #000000;
+    --cor-fundos: #3D46F2;
+    --cor-hover: #8D92F2;
+    --cor-bordas: #000000
+}
+
+body {
+    background: var(--cor-background);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.cabecalho > h1 {
+    color: var(--cor-letras);
+}
+
+.container-entrada {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+
+.container-entrada .entrada {
+    width: 25rem;
+    height: 20rem;
+}
+
+.aviso { 
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#entrada-texto {
+    width: 20rem;
+    height: 20rem;
+    font-size: 1.5rem;
+    color: var(--cor-letras);
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: 0;
+    padding: 0.5rem;
+    text-transform: lowercase;
+    resize: none;
+}
+
+.containerSaida {
+    display: flex;
+    flex-direction: column;
+}
+
+.saidaProcessada {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--cor-hover);
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    resize: none;
+
+}
+
+#saida {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-right: 10%;
+}
+
+#saida > h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--cor-letras);
+}
+
+#saida > p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.container-botao button{
+    background-color: var(--cor-fundos);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--cor-letras);
+    font-weight: bolder;
+    width: 9rem;
+    height: 3rem;
+    margin-left: 3.5%;
+    cursor: pointer;
+    border: 2px solid black;
+    margin-top: 3.5%;
+}
+
+.container-botao button:hover{
+    background-color: var(--cor-hover);
+}
+
+.botao-copiar {
+    justify-content: center;
+    background-color: var(--cor-fundos);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--cor-letras);
+    font-weight: bolder;
+    width: 9rem;
+    height: 3rem;
+    margin-left: 50%;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.botao-copiar:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin-top: 1rem;
+    background: var(--cor-fundos);
+    color: var(--cor-letras);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid black;
+}
+
+.links {
+    font-weight: bolder;
+    color: var(--cor-letras);
+}
+
+.titulos {
+    text-decoration: underline;
+}
